@@ -1,4 +1,4 @@
-FROM debian:stretch-slim
+FROM python:3.7-slim-stretch
 
 LABEL Maintainer="andresnator@gmail.com" \
     Name=debian-stretch-slim-python2-docker \
