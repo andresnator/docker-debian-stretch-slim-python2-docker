@@ -15,6 +15,14 @@ RUN apt-get update -qq && apt-get install -y --no-install-recommends \
 RUN apt-get install -y -qq python-pip &&\
     pip install PyInquirer &&\
     rm -rf /var/lib/apt/lists/*
+    
+    
+RUN pip install --upgrade   pip \
+                            mock \
+                            html-testRunner \
+                            unittest-xml-reporting \
+                            pytest \
+                            pytest-cov    
 
 
 RUN curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add - &&\
